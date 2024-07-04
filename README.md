@@ -1,3 +1,7 @@
+# Docker implementation of screengen by Oleg Kochkin
+Credit: [Oleg Kochkin](https://github.com/OlegKochkin)
+
+Original repository: [https://github.com/OlegKochkin/screengen]
 # screengen
 Creates the list thumbnails of the video file in console. Based on ffmpeg and QT. About 60 parameters for setting.
 
