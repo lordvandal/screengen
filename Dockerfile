@@ -6,10 +6,10 @@ FROM alpine:latest AS build
 
 RUN apk upgrade --no-cache && \
     apk add --no-cache git g++ make qt5-qtbase qt5-qtbase-dev ffmpeg ffmpeg-dev && \
-    git clone https://github.com/OlegKochkin/screengen
-    cd screengen
-    qmake-qt5
-    make
+    git clone https://github.com/OlegKochkin/screengen && \
+    cd screengen && \
+    qmake-qt5 && \
+    make && \
     make install_target
 
 FROM alpine:latest
